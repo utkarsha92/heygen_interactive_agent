@@ -117,7 +117,7 @@ export default function InteractiveAvatar() {
       setData(res);
       // default to voice mode
       await avatar.current?.startVoiceChat({
-        useSilencePrompt: false,
+        isInputAudioMuted: false,
       });
       setChatMode("voice_mode");
     } catch (error) {
